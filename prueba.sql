@@ -1,3 +1,13 @@
+PRUEBA
+
+Descripción
+En el siguiente caso, se deberá modelar la siguiente problematica, revisar que el modelo haya
+quedado en 3FN, para luego pasar a crear el modelo en la base de datos, poblar la base de datos y
+finalmente realizar consultas sobre la misma. Para realizar los diagramas se recomienda utilizar http://
+draw.io
+
+
+
 eva=> CREATE DATABASE prueba;
 CREATE DATABASE
 eva=> \c prueba;
@@ -13,6 +23,13 @@ CREATE TABLE
 prueba=> SELECT * FROM cliente;
  id_cliente | rut | nombre | direccion 
 ------------+-----+--------+-----------
+(0 rows)
+
+prueba=> ALTER TABLE cliente ADD total_a_pagar INT;
+ALTER TABLE
+prueba=> SELECT * FROM cliente;
+ id_cliente | rut | nombre | direccion | total_a_pagar 
+------------+-----+--------+-----------+---------------
 (0 rows)
 
 prueba=> CREATE TABLE factura(
