@@ -168,3 +168,38 @@ prueba=> SELECT * FROM producto;
                7 | apio                 |             20
                8 | zanahoria            |             25
 (8 rows)
+
+prueba=> SELECT * FROM categoria;
+ codigo_producto | nombre_categoria | id_categoria 
+-----------------+------------------+--------------
+(0 rows)
+
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('1', 'carnes', '180');
+INSERT 0 1
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('2', 'carnes', '180');
+INSERT 0 1
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('3', 'carnes', '180');
+INSERT 0 1
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('4', 'abarrotes', '160');
+INSERT 0 1
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('5', 'abarrotes', '160');
+INSERT 0 1
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('6', 'abarrotes', '160');
+INSERT 0 1
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('7', 'vegetales', '170');
+INSERT 0 1
+prueba=> INSERT INTO categoria(codigo_producto, nombre_categoria, id_categoria) VALUES('8', 'vegetales', '170');
+INSERT 0 1
+
+prueba=> SELECT * FROM categoria;
+ codigo_producto | nombre_categoria | id_categoria 
+-----------------+------------------+--------------
+               1 | carnes           |          180
+               2 | carnes           |          180
+               3 | carnes           |          180
+               4 | abarrotes        |          160
+               5 | abarrotes        |          160
+               6 | abarrotes        |          160
+               7 | vegetales        |          170
+               8 | vegetales        |          170
+(8 rows)
