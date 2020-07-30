@@ -125,8 +125,6 @@ INSERT 0 1
 prueba=> SELECT * FROM cliente;
 
 
-
-
  id_cliente |     rut      |    nombre     |    direccion    | total_a_pagar 
 ------------+--------------+---------------+-----------------+---------------
           1 | 15.612.000-1 | Ana Solis     | Teatinos 12     |           137
@@ -135,3 +133,38 @@ prueba=> SELECT * FROM cliente;
           4 | 12.080.090-1 | Ema Tapia     | Valdivia 1450   |           282
           5 | 10.060.225-4 | Lorena Cruz   | Los Olmos 4015  |             0
 (5 rows)
+
+prueba=> SELECT * FROM producto;
+ codigo_producto | descripcion_producto | valor_unitario 
+-----------------+----------------------+----------------
+(0 rows)
+
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('1', 'carne', '40');
+INSERT 0 1
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('2', 'carne molida', '12');
+INSERT 0 1
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('3', 'lomo vetado', '50');
+INSERT 0 1
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('4', 'arroz', '20');
+INSERT 0 1
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('5', 'puré', '10');
+INSERT 0 1
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('6', 'tallarines', '15');
+INSERT 0 1
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('7', 'apio', '20');
+INSERT 0 1
+prueba=> INSERT INTO producto(codigo_producto, descripcion_producto, valor_unitario) VALUES('8', 'zanahoria', '25');
+INSERT 0 1
+
+prueba=> SELECT * FROM producto;
+ codigo_producto | descripcion_producto | valor_unitario 
+-----------------+----------------------+----------------
+               1 | carne                |             40
+               2 | carne molida         |             12
+               3 | lomo vetado          |             50
+               4 | arroz                |             20
+               5 | puré                 |             10
+               6 | tallarines           |             15
+               7 | apio                 |             20
+               8 | zanahoria            |             25
+(8 rows)
