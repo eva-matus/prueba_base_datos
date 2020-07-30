@@ -112,5 +112,26 @@ siguientes registros:
 1 para el cliente 3, con 1 producto
 4 para el cliente 4, con 2, 3, 4 y 1 producto.
 
+prueba=> INSERT INTO cliente(id_cliente, rut, nombre, direccion, total_a_pagar) VALUES('001', '15.612.000-1', 'Ana Solis', 'Teatinos 12', '137');  
+INSERT 0 1
+prueba=> INSERT INTO cliente(id_cliente, rut, nombre, direccion, total_a_pagar) VALUES('002', '16.908.601-2', 'Carlos Veliz', 'Providencia 228', '431');
+INSERT 0 1
+prueba=> INSERT INTO cliente(id_cliente, rut, nombre, direccion, total_a_pagar) VALUES('003', '13.061.415-k', 'Marta Poblete', 'Los Leones 1240', '60');
+INSERT 0 1
+prueba=> INSERT INTO cliente(id_cliente, rut, nombre, direccion, total_a_pagar) VALUES('004', '12.080.090-1', 'Ema Tapia', 'Valdivia 1450', '282');
+INSERT 0 1
+prueba=> INSERT INTO cliente(id_cliente, rut, nombre, direccion, total_a_pagar) VALUES('005', '10.060.225-4', 'Lorena Cruz', 'Los Olmos 4015', '0');
+INSERT 0 1
+prueba=> SELECT * FROM cliente;
 
 
+
+
+ id_cliente |     rut      |    nombre     |    direccion    | total_a_pagar 
+------------+--------------+---------------+-----------------+---------------
+          1 | 15.612.000-1 | Ana Solis     | Teatinos 12     |           137
+          2 | 16.908.601-2 | Carlos Veliz  | Providencia 228 |           431
+          3 | 13.061.415-k | Marta Poblete | Los Leones 1240 |            60
+          4 | 12.080.090-1 | Ema Tapia     | Valdivia 1450   |           282
+          5 | 10.060.225-4 | Lorena Cruz   | Los Olmos 4015  |             0
+(5 rows)
