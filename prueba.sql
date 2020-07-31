@@ -256,4 +256,13 @@ prueba=> SELECT * FROM productos WHERE (cod_producto = 6);
 --------------+-----------------+-----------------
             6 | tallarines      |              15
 (1 row)
+ prueba
+ cant   
+--------------
+ 2
+ (1 row)
+ 
+ 
+ 
+ 
 
