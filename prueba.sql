@@ -251,5 +251,9 @@ prueba=> SELECT nombre FROM cliente WHERE total > 100;
 
 ¿Cuantos clientes han comprado el producto 6.
 
-
+prueba=> SELECT * FROM productos WHERE (cod_producto = 6);
+ cod_producto | nombre_producto | precio_producto 
+--------------+-----------------+-----------------
+            6 | tallarines      |              15
+(1 row)
 
