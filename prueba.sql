@@ -20,6 +20,7 @@ Cada producto pertenece a una categoría, la cual tiene un id, el nombre de la c
 descripción.
 
 
+Parte 1: Crear modelo lógico para el siguiente caso.
 eva=> DROP DATABASE prueba;
 DROP DATABASE
 eva=> CREATE DATABASE prueba;
@@ -226,6 +227,8 @@ prueba=> SELECT * FROM categoria;
              3 | carnes           |            3
 (3 rows)
 
+
+
 ¿Que cliente realizó la compra más cara?
 
 prueba=> SELECT MAX (total) FROM cliente;
@@ -234,8 +237,6 @@ prueba
 -----
  431
 (1 row)
-
-
 
 ¿Que cliente pagó sobre 100 de monto?
 
@@ -247,7 +248,6 @@ prueba=> SELECT nombre FROM cliente WHERE total > 100;
  carlos veliz
  ema tapia
 (3 rows)
-
 
 ¿Cuantos clientes han comprado el producto 6.
 
